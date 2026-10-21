@@ -1,0 +1,13 @@
+test_CP1_sin_entrar_al_bucle_externo (test_bubble_sort.TestCaminosIndependientes.test_CP1_sin_entrar_al_bucle_externo) ... ok
+test_CP2_comparacion_sin_intercambio (test_bubble_sort.TestCaminosIndependientes.test_CP2_comparacion_sin_intercambio) ... ok
+test_CP3_comparacion_con_intercambio (test_bubble_sort.TestCaminosIndependientes.test_CP3_comparacion_con_intercambio) ... ok
+test_CP4_repeticion_de_bucles (test_bubble_sort.TestCaminosIndependientes.test_CP4_repeticion_de_bucles) ... ok
+test_lista_vacia (test_bubble_sort.TestRegresion.test_lista_vacia) ... ok
+test_orden_inverso (test_bubble_sort.TestRegresion.test_orden_inverso) ... ok
+test_repetidos (test_bubble_sort.TestRegresion.test_repetidos) ... ok
+test_valores_negativos_y_cero (test_bubble_sort.TestRegresion.test_valores_negativos_y_cero) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

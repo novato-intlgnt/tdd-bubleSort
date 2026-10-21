@@ -1,0 +1,245 @@
+{
+  "criterio": "Cobertura de decisiones y condiciones simples",
+  "nodos_de_decision": {
+    "N2": {
+      "resultados_cubiertos": [
+        "F",
+        "V"
+      ],
+      "posibles": [
+        "F",
+        "V"
+      ],
+      "cobertura": "2/2"
+    },
+    "N4": {
+      "resultados_cubiertos": [
+        "F",
+        "V"
+      ],
+      "posibles": [
+        "F",
+        "V"
+      ],
+      "cobertura": "2/2"
+    },
+    "N5": {
+      "resultados_cubiertos": [
+        "F",
+        "V"
+      ],
+      "posibles": [
+        "F",
+        "V"
+      ],
+      "cobertura": "2/2"
+    }
+  },
+  "ramas_cubiertas": 6,
+  "ramas_posibles": 6,
+  "cobertura_porcentaje": 100,
+  "trazas": [
+    {
+      "id": "CP1",
+      "entrada": [
+        7
+      ],
+      "salida": [
+        7
+      ],
+      "descripcion": "No entra al bucle externo",
+      "camino": "N1-N2(F)-N9",
+      "decisiones": [
+        [
+          "N2",
+          "F"
+        ]
+      ],
+      "nodos": [
+        "N1",
+        "N2",
+        "N9"
+      ]
+    },
+    {
+      "id": "CP2",
+      "entrada": [
+        1,
+        2
+      ],
+      "salida": [
+        1,
+        2
+      ],
+      "descripcion": "No realiza intercambio",
+      "camino": "N1-N2(V)-N3-N4(V)-N5(F)-N7-N4(F)-N8-N2(F)-N9",
+      "decisiones": [
+        [
+          "N2",
+          "V"
+        ],
+        [
+          "N4",
+          "V"
+        ],
+        [
+          "N5",
+          "F"
+        ],
+        [
+          "N4",
+          "F"
+        ],
+        [
+          "N2",
+          "F"
+        ]
+      ],
+      "nodos": [
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N7",
+        "N4",
+        "N8",
+        "N2",
+        "N9"
+      ]
+    },
+    {
+      "id": "CP3",
+      "entrada": [
+        2,
+        1
+      ],
+      "salida": [
+        1,
+        2
+      ],
+      "descripcion": "Realiza un intercambio",
+      "camino": "N1-N2(V)-N3-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(F)-N9",
+      "decisiones": [
+        [
+          "N2",
+          "V"
+        ],
+        [
+          "N4",
+          "V"
+        ],
+        [
+          "N5",
+          "V"
+        ],
+        [
+          "N4",
+          "F"
+        ],
+        [
+          "N2",
+          "F"
+        ]
+      ],
+      "nodos": [
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N4",
+        "N8",
+        "N2",
+        "N9"
+      ]
+    },
+    {
+      "id": "CP4",
+      "entrada": [
+        2,
+        3,
+        1
+      ],
+      "salida": [
+        1,
+        2,
+        3
+      ],
+      "descripcion": "Repite bucles interno y externo",
+      "camino": "N1-N2(V)-N3-N4(V)-N5(F)-N7-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(V)-N3-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(F)-N9",
+      "decisiones": [
+        [
+          "N2",
+          "V"
+        ],
+        [
+          "N4",
+          "V"
+        ],
+        [
+          "N5",
+          "F"
+        ],
+        [
+          "N4",
+          "V"
+        ],
+        [
+          "N5",
+          "V"
+        ],
+        [
+          "N4",
+          "F"
+        ],
+        [
+          "N2",
+          "V"
+        ],
+        [
+          "N4",
+          "V"
+        ],
+        [
+          "N5",
+          "V"
+        ],
+        [
+          "N4",
+          "F"
+        ],
+        [
+          "N2",
+          "F"
+        ]
+      ],
+      "nodos": [
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N7",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N4",
+        "N8",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N4",
+        "N8",
+        "N2",
+        "N9"
+      ]
+    }
+  ]
+}

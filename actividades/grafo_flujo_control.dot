@@ -1,0 +1,27 @@
+digraph BubbleSortCFG {
+  graph [rankdir=TB, bgcolor="white", pad="0.28", nodesep="0.60", ranksep="0.56", splines=polyline, fontname="DejaVu Sans"];
+  node [fontname="DejaVu Sans", fontsize=13, color="#203656", fontcolor="#15233A", penwidth=1.3, style="filled", fillcolor="#F2F6FB", shape=box, margin="0.17,0.12"];
+  edge [fontname="DejaVu Sans", fontsize=11, color="#50627B", fontcolor="#34465F", arrowsize=0.72, penwidth=1.2];
+  N1 [label="N1 · Inicio\ni ← tamaño(vet)", shape=oval, fillcolor="#E2F3ED", color="#2A7663"];
+  N2 [label="N2 · ¿i ≥ 2?", shape=diamond, fillcolor="#FFF0CD", width=1.9, height=0.85];
+  N3 [label="N3 · j ← 1", fillcolor="#EAF0FA"];
+  N4 [label="N4 · ¿j ≤ i − 1?", shape=diamond, fillcolor="#FFF0CD", width=2.15, height=0.90];
+  N5 [label="N5 · ¿vet[j] > vet[j+1]?", shape=diamond, fillcolor="#FFF0CD", width=2.65, height=0.95];
+  N6 [label="N6 · Intercambiar\nvet[j] y vet[j+1]", fillcolor="#E3F2ED", color="#2A7663"];
+  N7 [label="N7 · j ← j + 1", fillcolor="#EAF0FA"];
+  N8 [label="N8 · i ← i − 1", fillcolor="#EAF0FA"];
+  N9 [label="N9 · Fin", shape=oval, fillcolor="#E2F3ED", color="#2A7663"];
+  N1 -> N2;
+  N2 -> N3 [label="V"];
+  N2 -> N9 [label="F", minlen=9, constraint=false, color="#BF6B39", fontcolor="#BF6B39"];
+  N3 -> N4;
+  N4 -> N5 [label="V"];
+  N4 -> N8 [label="F", color="#BF6B39", fontcolor="#BF6B39"];
+  N5 -> N6 [label="V"];
+  N5 -> N7 [label="F", color="#BF6B39", fontcolor="#BF6B39"];
+  N6 -> N7;
+  N7 -> N4 [label="siguiente j", constraint=false, color="#587AB4", fontcolor="#587AB4"];
+  N8 -> N2 [label="siguiente i", constraint=false, color="#587AB4", fontcolor="#587AB4"];
+  {rank=same; N7; N9;}
+  {rank=same; N5; N8;}
+}

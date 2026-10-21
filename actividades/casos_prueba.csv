@@ -1,0 +1,5 @@
+﻿ID CP,Camino en el grafo,Valores de prueba,Resultado esperado,Objetivo del caso
+CP1,N1-N2(F)-N9,[7],[7],No entra al bucle externo
+CP2,N1-N2(V)-N3-N4(V)-N5(F)-N7-N4(F)-N8-N2(F)-N9,"[1, 2]","[1, 2]",No realiza intercambio
+CP3,N1-N2(V)-N3-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(F)-N9,"[2, 1]","[1, 2]",Realiza un intercambio
+CP4,N1-N2(V)-N3-N4(V)-N5(F)-N7-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(V)-N3-N4(V)-N5(V)-N6-N7-N4(F)-N8-N2(F)-N9,"[2, 3, 1]","[1, 2, 3]",Repite bucles interno y externo
