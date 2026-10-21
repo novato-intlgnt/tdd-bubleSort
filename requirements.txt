@@ -1,2 +1,1 @@
-# unittest pertenece a la biblioteca estándar de Python; no se instala aparte.
 coverage>=7.0,<9.0
